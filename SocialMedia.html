@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOCIALS | SMPLY LVLY</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #0A2A88, #5DA9FF);
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  padding: 15px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0A2A88;
+  color: white;
+  z-index: 10;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 3px;
+
+  /* Gradient using background + mask for better compatibility */
+  background: linear-gradient(90deg, #5DA9FF, #FFFFFF);
+  color: #5DA9FF; /* fallback color */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  transition: letter-spacing 0.3s ease;
+}
+
+.logo:hover {
+  letter-spacing: 5px;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+}
+
+.nav-left a,
+.nav-right a {
+  background-color: #5DA9FF;
+  text-decoration: none;
+  color: white;
+  margin: 0 8px;
+  font-size: 14px;
+  padding: 6px 12px;
+  transition: 0.3s;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+  opacity: 0.7;
+}
+
+.nav-links1 a:hover {
+  opacity: 0.7;
+}
+
+.nav-links1 a {
+  background-color: #5DA9FF;
+  text-decoration: none;
+  color: #0A2A88;
+  margin-left: 15px;
+  font-size: 14px;
+  padding: 6px 12px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.nav-links1 a:hover {
+  opacity: 0.7;
+}
+
+.about-wrapper {
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.about-card {
+  width: 85%;
+  height: 75vh;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.about-video {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-video video {
+  width: 65%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.about-text {
+  flex: 1;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-text h2 {
+  color: #0A2A88;
+  margin-bottom: 20px;
+  font-size: 48px;
+}
+
+.contact-item {
+  font-size: 38px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-item svg {
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+  display: block;
+}
+
+.contact-item a {
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: 0.3s;
+}
+
+.contact-item a:hover {
+  color: #5DA9FF;
+}
+
+.about-text::-webkit-scrollbar {
+  width: 6px;
+}
+
+.about-text::-webkit-scrollbar-thumb {
+  background: #5DA9FF;
+  border-radius: 10px;
+}
+
+/* ======================
+TABLETS (1024px and below)
+====================== */
+
+@media (max-width:1024px){
+
+  .about-card{
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .about-video video{
+    width: 80%;
+    height: auto;
+  }
+
+  .about-text{
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .about-text h2{
+    font-size: 36px;
+  }
+
+  .contact-item{
+    font-size: 26px;
+    justify-content: center;
+  }
+
+  .contact-item svg{
+    width: 28px;
+    height: 28px;
+  }
+
+}
+
+/* ======================
+PHONES (768px and below)
+====================== */
+
+@media (max-width:768px){
+
+  .navbar{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links1 a{
+    margin: 5px;
+    font-size: 12px;
+  }
+
+  .about-wrapper{
+    padding-top: 120px;
+    height: auto;
+  }
+
+  .about-card{
+    width: 92%;
+    padding: 20px;
+  }
+
+  .about-video video{
+    width: 100%;
+  }
+
+  .about-text h2{
+    font-size: 30px;
+  }
+
+  .contact-item{
+    font-size: 20px;
+  }
+
+}
+
+/* ======================
+SMALL PHONES (480px)
+====================== */
+
+@media (max-width:480px){
+
+  .about-text h2{
+    font-size: 26px;
+  }
+
+  .contact-item{
+    font-size: 18px;
+    gap: 10px;
+  }
+
+  .contact-item svg{
+    width: 22px;
+    height: 22px;
+  }
+
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+
+  <div class="nav-left">
+    <a href="homepage.html">Home</a>
+    <a href="About.html">About</a>
+  </div>
+
+  <div class="logo">SMPLY LVLY</div>
+
+  <div class="nav-right">
+    <a href="skills.html">Skills and Achievements</a>
+    <a href="index.html">Log Out</a>
+  </div>
+</div>
+<div class="about-wrapper">
+  <div class="about-card">
+
+    <div class="about-video">
+      <video autoplay muted loop playsinline controls>
+        <source src="editz.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    
+    <div class="about-text">
+      <h2>My Social Media and Contacts</h2>
+
+      <div class="contact-item">
+        <a href="https://www.facebook.com/profile.php?id=100048188891611&mibextid=ZbWKwL" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+          </svg>
+          Raine Allen Capile
+        </a>
+      </div>
+
+      <div class="contact-item">
+        <a href="https://www.instagram.com/fineboii_gh0st/" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+          </svg>
+          @fineboii_gh0st
+        </a>
+      </div>
+
+      <div class="contact-item">
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+          </svg>
+          09942069447
+        </a>
+      </div>
+
+      <div class="contact-item">
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+          </svg>
+          capileraineallen04@gmail.com
+        </a>
+      </div>
+
+
+            <div class="contact-item">
+        <a href="#">
+<svg viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#000000" fill-rule="evenodd" d="M30.41 29.192a6 6 0 0 1 6.677-.337l20 12A6 6 0 0 1 60 46v100a6 6 0 0 1-2.913 5.145l-20 12a6 6 0 0 1-6.677-.338l-12-8.961a5.998 5.998 0 0 1-2.41-4.807V42.961a6 6 0 0 1 2.41-4.807l12-8.962Zm3.955 12.024L28 45.969V146.03l6.365 4.753L48 142.603V49.397l-13.635-8.181Zm86.591 11.563A6 6 0 0 1 124 58v56a6 6 0 0 1-2.913 5.145l-22 13.2a6 6 0 0 1-6.174 0l-22-13.2A6 6 0 0 1 68 114V58a6 6 0 0 1 9.087-5.145L96 64.203l18.913-11.348a6 6 0 0 1 6.043-.076ZM112 68.597l-12.913 7.748a6 6 0 0 1-6.174 0L80 68.597v42.006l16 9.6 16-9.6V68.597Zm42.913-39.742a6 6 0 0 1 6.677.337l12 8.962A6 6 0 0 1 176 42.96v106.08a5.997 5.997 0 0 1-2.41 4.807l-12 8.961a6 6 0 0 1-6.677.338l-20-12A6 6 0 0 1 132 146V46a6 6 0 0 1 2.913-5.145l20-12ZM164 45.969l-6.365-4.753L144 49.397v93.206l13.635 8.181 6.365-4.753V45.969Z" clip-rule="evenodd"></path></g></svg>
+          NYX Gh0st
+        </a>
+      </div>
+    
+    <div class="contact-item">
+        <a href="#">
+<svg viewBox="0 0 50.8 50.8" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M15.697 15.697v17.466l9.58 9.58 10.32.12m-3.4-34.925h10.666v10.666ZM7.936 32.195v10.666h10.667Zm7.267-24.258h10.193l9.706 9.699v17.466l7.76 7.76v-17.46M34.13 16.67l-8.733 8.733L7.937 7.938v17.465" style="fill:none;stroke:#000000;stroke-width:3.175;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path></g></svg>
+          LEGEND08
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills & Achievements | SMPLY LVLY</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0A2A88, #5DA9FF);
+  color: #333;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0A2A88, #5DA9FF);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 120px 8% 60px 8%;
+  overflow: hidden;
+  color: white;
+}
+
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  padding: 15px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0A2A88;
+  color: white;
+  z-index: 10;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 3px;
+
+  /* Gradient using background + mask for better compatibility */
+  background: linear-gradient(90deg, #5DA9FF, #FFFFFF);
+  color: #5DA9FF; /* fallback color */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  transition: letter-spacing 0.3s ease;
+}
+
+.logo:hover {
+  letter-spacing: 5px;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+}
+
+.nav-left a,
+.nav-right a {
+  background-color: #5DA9FF;
+  text-decoration: none;
+  color: white;
+  margin: 0 8px;
+  font-size: 14px;
+  padding: 6px 12px;
+  transition: 0.3s;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+  opacity: 0.7;
+}
+
+.nav-links a:hover {
+  opacity: 0.7;
+}
+
+/* HERO CONTENT */
+.hero-content {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 36px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 40px;
+}
+
+.achievement {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.achievement img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  flex-shrink: 0;
+}
+
+.achievement-content {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border: 2px solid white;
+  border-radius: 12px;
+}
+
+.achievement-content h3 {
+  margin-bottom: 8px;
+}
+
+.achievement-content p {
+  margin-bottom: 0;
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+
+<div class="navbar">
+
+  <div class="nav-left">
+    <a href="homepage.html">Home</a>
+    <a href="About.html">About</a>
+  </div>
+
+  <div class="logo">SMPLY LVLY</div>
+
+  <div class="nav-right">
+    <a href="SocialMedia.html">Social Media & Contacts</a>
+    <a href="index.html">Log Out</a>
+  </div>
+
+</div>
+
+  <div class="hero-content">
+    <h1>Skills & Achievements</h1>
+    <p>Here are some of my Skills and Achievements I've completed in the present and the past.</p>
+
+    <div class="achievement">
+      <img src="program.jpg" alt="Programming">
+      <div class="achievement-content">
+        <h3>Programming Skills</h3>
+        <p>My dream in life is to be a Developer or a Programmer, because i like technologies, games, etc. 
+          I want to make a application, games that people plays, and innovations that helps others. 
+          To be a programmer, i have to learn some programming languange like HTML, CSS etc.
+          But, i'm still improving to be a programmer like Mark Zuckerberg, Vince Zampella, and so much more.
+          One Day, i will be those guys in the future and improve the world for a better technologies and innovations.</p>
+      </div>
+    </div>
+
+    <div class="achievement">
+      <img src="esports.jpg" alt="Esports">
+      <div class="achievement-content">
+        <h3>Esports Player</h3>
+        <p>I participated my First Ever Esports Tournament last year and it was a blast.
+          Meeting some new people, chasing that gold medal in the tournament and improve my gaming skills.
+          But we only get 3rd, still i want to improve just like the legends of esports players like Scump, Tenz, Sisco and Etc.
+          Esports have discipline, communication, coorpiration with the team because teamwork makes the dream work.
+          This dream is great but also is a high-risk taking job because i takes a lot of years to improve and experience the game you play.
+          But still, i want tthis dream to come true if i'm dedicated to play against the World.
+        </p>
+      </div>
+    </div>
+
+    <div class="achievement">
+      <img src="racing.jpeg" alt="Sim Racing">
+      <div class="achievement-content">
+        <h3>Sim Racer</h3>
+        <p>I want to race in real life but it so expensive i like to play in the simulator or in virtual racing.
+          Not only it is a replica of every motorsports, tracks, and car manufacturers. But also it improves Reaction Times, Critical Thinking, and more.
+          Sims are so expensive i have to go play on either cafes, comshop to play F1 roblox, or play in my Cellphone to play Real Racing 3.
+          It also transforms from playing in sims to real life racing because i like to be a driver like Max Verstapppen.
+          
+        </p>
+      </div>
+    </div>
+
+    <div class="achievement">
+      <img src="codm.jpg" alt="Web Projects">
+      <div class="achievement-content">
+        <h3>CODM Player</h3>
+        <p>I'm a CODM Player since 2021, the times when i like to play some serious games with serious skills.
+          This is my favorate game since i i'm playing all the time when i'm not busy anything.
+          My Achivements of this games is to be Legendary, the Highest Rank in the game in multiplayer 9 Times, 3rd Place in Intramurals last Year.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="achievement">
+      <img src="honor.jpg" alt="Awards">
+      <div class="achievement-content">
+        <h3>Honor Student</h3>
+        <p>Being a Honor Student is actually stressful, but the most achievable award to ever.
+          This is the award that tkes a lot of sleepless nights, paperworks, taskn that are important to keep my grades improve.
+          This is not only about the grades, its all about Hardwork of a students that people never even know the story.
+          I'm just an avarage student back in junior high, but this year is different. 
+          I have a different mindset so that way i can make the best that i can and be consistent all the time.
+        </p>
+      </div>
+    </div>
+
+  <div class="achievement">
+      <img src="bulsu.jpg" alt="Awards">
+      <div class="achievement-content">
+        <h3>A Alma Mater Student</h3>
+        <p>Last School Year, i graduated in Bulacan State University - Laboratory High School in April 25, 2025. 
+          This is the last time i will be in my second home with my diploma back home.
+          But the love ones i cared about since the day we meet each other in the first place will be seperated tto different schools.
+          This achivement is through the rough days all of my old classmates had, sleepless nights and stressfull times, finally we survive.
+          I really hope i could go back in time i re-do it all over again and never do my mistakes in the past so that way i can be a even better person i am.
+          I achive some of the awards in the past and I;m gonna miss my people in LabHigh.
+          And Officially being the Alma Mater Student in Bulacan State Univeristy.
+        </p>
+      </div>
+    </div>
+
+  <div class="achievement">
+      <img src="research.jpeg" alt="Awards">
+      <div class="achievement-content">
+        <h3>My First Research Defended</h3>
+        <p>In the time of the Proposal, we got rejected and do it all over again until we got our topic is Enrollease.
+          This is my first ever research, simply because my school dosen't have one unless your in STE (Science, Technology, and Engineering).
+          This topic, i want to adapt this because i experience some disadvantage in enrolling here.
+          This my makes my sanity worsen even more because of some citations, codes in our website, and our Final Defense.
+          Until we are ready in Our Final Defense, we are all under pressure, questions is been answered, and great suggestions.
+          We finnaly Defended our Website and Research.
+        </p>
+      </div>
+    </div>
+
+    
+
+
+  </div>
+
+</section>
+
+</body>
+</html>
